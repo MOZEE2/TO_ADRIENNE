@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyeux 12 ans, Adrienne !</title>
+    <style>
+        /* CSS pour rendre la page jolie */
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fce4ec; /* Un fond rose clair */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #ff80ab; /* Rose vif */
+            color: white;
+            padding: 2em 0;
+            border-bottom: 5px solid #f06292;
+        }
+
+        header h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2em auto;
+            padding: 0 1em;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding-bottom: 2em;
+        }
+
+        .section {
+            padding: 2em 1.5em;
+            border-bottom: 1px dashed #ddd;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            margin-bottom: 1em;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #c2185b; /* Rose foncé */
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.8em;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 1.5em;
+        }
+
+        .gallery-img {
+            width: 45%; 
+            margin-bottom: 1em;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .wishes-box {
+            background-color: #fff8e1; /* Jaune crème */
+            border-left: 5px solid #ffc107; /* Ambre */
+            padding: 1.5em;
+            margin: 2em 0;
+            text-align: left;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        audio {
+            width: 80%;
+            margin-top: 1.5em;
+        }
+
+        footer {
+            margin-top: 2em;
+            padding: 1.5em;
+            background-color: #ff80ab;
+            color: white;
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 3em;
+            }
+            h2 {
+                font-size: 2.2em;
+            }
+            .gallery-img {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Joyeux Anniversaire Adrienne !</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="section">
+            <h2>Déjà 12 ans !</h2>
+            <p>Une nouvelle bougie sur ton gâteau, une nouvelle année pleine de promesses qui commence. Je te souhaite le plus merveilleux des anniversaires !</p>
+            
+            <img src="IMG1.jpg" alt="Adrienne célébrant son anniversaire" class="hero-image">
+        </div>
+
+        <div class="section">
+            <h2>Mes Vœux pour Toi</h2>
+            <div class="wishes-box">
+                <p>Chère Adrienne,</p>
+                <p>En ce jour si spécial, je veux te souhaiter tout le bonheur du monde. Que cette douzième année soit remplie de <strong>joie</strong>, de <strong>rires</strong>, de <strong>découvertes</strong> et de <strong>succès</strong>.</p>
+                <p>Même sans t'avoir connu assez longtemps, je sais que Tu es une personne incroyable, pleine de talent et de gentillesse. Ne change jamais ! Continue de rêver grand et de poursuivre tes passions avec cette belle énergie qui te caractérise.</p>
+                <p>Encore une fois, <strong>Joyeux anniversaire 🎉</strong> ! Comme je suis broke, ce site est un petit cadeau, mais il vient du cœur ❤️</p>
+
+                <p>Avec tout mon amour,</p>
+                <p><em>MOZÉÉ.</em></p>
+            </div>
+             <img src="IMG2.jpg" alt="Un portrait d'Adrienne" class="hero-image" style="max-width: 400px;">
+        </div>
+
+        <div class="section">
+            <h2>Quelques Jolis Souvenirs</h2>
+            <p>Parce que chaque moment que tu partages est un trésor.</p>
+            <div class="gallery">
+                <img src="IMG3.jpg" alt="Adrienne s'amusant" class="gallery-img">
+                <img src="IMG4.jpg" alt="Un autre beau souvenir d'Adrienne" class="gallery-img">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Une Chanson pour Toi</h2>
+            <p>FOR YOU🔥💯!</p>
+            <audio id="music" autoplay loop muted controls>
+                <source src="SON.mp3" type="audio/mpeg">
+                Ton navigateur ne supporte pas l'élément audio.
+            </audio>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Fait avec beaucoup d'amour pour les 12 ans d'Adrienne, par MOZÉÉ.</p>
+    </footer>
+
+    <!-- Script pour activer le son après une interaction -->
+    <script>
+        const music = document.getElementById("music");
+        document.addEventListener("click", () => {
+            music.muted = false;
+            music.play();
+        }, { once: true });
+    </script>
+
+</body>
+</html>
