@@ -98,11 +98,6 @@
             text-align: left;
             border-radius: 0 8px 8px 0;
         }
-        
-        audio {
-            width: 80%;
-            margin-top: 1.5em;
-        }
 
         footer {
             margin-top: 2em;
@@ -167,9 +162,9 @@
         <div class="section">
             <h2>Une Chanson pour Toi</h2>
             <p>FOR YOU🔥💯!</p>
-            <audio id="music" autoplay loop muted controls>
+            <!-- Audio caché -->
+            <audio id="music" loop>
                 <source src="SON.mp3" type="audio/mpeg">
-                Ton navigateur ne supporte pas l'élément audio.
             </audio>
         </div>
 
@@ -179,11 +174,10 @@
         <p>Fait avec beaucoup d'amour pour les 12 ans d'Adrienne, par MOZÉÉ.</p>
     </footer>
 
-    <!-- Script pour activer le son après une interaction -->
+    <!-- Script pour lancer la musique au premier clic -->
     <script>
         const music = document.getElementById("music");
         document.addEventListener("click", () => {
-            music.muted = false;
             music.play();
         }, { once: true });
     </script>
